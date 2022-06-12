@@ -1,0 +1,238 @@
+:root {
+  --black-color: rgb(34, 33, 33); /* --primary-color */
+  --black-color-light: rgb(34, 30, 30); /* --primary-color-light */
+  --black-color-dark: rgb(10, 4, 4); /* --primary-color-dark */
+  --brand-color-alt: rgb(9, 111, 136); /* --brand-color */
+  --brand-color: rgb(0, 183, 255); /* --brand-color-2 */
+  --background-white: #e3edf7;
+  --menu-z-index: 100;
+  --navbar-z-index: 81;
+  --home-z-index: -10;
+}
+
+/* SHOWCASE  AND   NAVIGATION BAR */
+
+.showcase a {
+  color: white;
+}
+
+.showcase .read-more-btn-container {
+  margin-top: 1.875rem;
+}
+.read-more-btn-container a {
+  background: linear-gradient(to left, var(--brand-color), rgb(13, 201, 13));
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+.read-more-btn-container a:hover {
+  color: white;
+}
+
+.read-more-btn {
+  font-size: 1.25rem;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  background: none;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.read-more-btn-container a::after {
+  content: " ";
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--brand-color-alt);
+  background: #e91e63;
+  background: #673ab7;
+  background: linear-gradient(to left, rgb(12, 189, 12), #673ab7, #e91e63);
+  opacity: 0.7;
+  transition: all 0.4s;
+}
+.read-more-btn-container a:hover::after {
+  width: 100%;
+}
+
+/* SHOWCASE */
+.showcase {
+  background: url("../images/services/web-dev.jpg") no-repeat center
+    center/cover;
+  background-color: var(--brand-color-alt);
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow-x: hidden;
+}
+.showcase::after {
+  content: " ";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.background-image-loading {
+  font-size: 1.25rem;
+  color: white;
+}
+
+/* Brand */
+.showcase .brand {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  z-index: 2;
+}
+.showcase .brand-name {
+  font-size: 5.625rem;
+  font-weight: 600;
+}
+.brand-highlight {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: var(--brand-color);
+}
+.brand-wrench {
+  /* Brand letter i in JhayPhix */
+  transform: rotate(45deg);
+  animation: brandWrench 8s infinite;
+}
+
+.showcase .auto-write-text {
+  font-size: 1.25rem;
+  margin-bottom: 0.625rem;
+  padding-left: 0.9375rem;
+  height: 2.5rem;
+}
+
+@keyframes brandWrench {
+  10% {
+    color: yellow;
+    transform: rotate(270deg);
+  }
+  40% {
+    color: var(--brand-color);
+    transform: rotate(-45deg) scale(0.7);
+  }
+  90% {
+    color: green;
+    transform: rotate(3600deg);
+  }
+}
+
+/* ShowCase Links */
+
+.showcase-links-container i {
+  margin-right: 0.625rem;
+  cursor: pointer;
+}
+.showcase-links-container i:hover {
+  color: var(--brand-color-alt);
+}
+.showcase-links-container a:hover {
+  cursor: pointer;
+}
+
+/* END OF SHOWCASE */
+/* ------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------- */
+
+/* MOBILE RESPONSIVE */
+
+@media only screen and (max-width: 821px) {
+  .showcase .brand-name {
+    font-size: 4.375rem;
+  }
+  .showcase .auto-write-text {
+    margin-top: 0.9375rem;
+  }
+  .showcase-links-container i {
+    margin-top: -0.625rem;
+    font-size: 1.6875rem;
+  }
+  .showcase .read-more-btn-container {
+    margin-top: 1.5625rem;
+  }
+  .read-more-btn {
+    font-size: 1.128rem;
+    font-weight: 400;
+  }
+  .read-more-btn-container a {
+    padding: 0.8125rem 1rem;
+  }
+}
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 540px) {
+  .showcase {
+    background-position: 70%;
+  }
+  .showcase .brand-name {
+    font-size: 3.75rem;
+  }
+  .showcase .auto-write-text {
+    font-size: 1.128rem;
+  }
+}
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 450px) {
+  .showcase .brand-name {
+    font-size: 3.125rem;
+  }
+  .showcase .auto-write-text {
+    margin-left: -0.3125rem;
+    margin-top: 0.9375rem;
+  }
+  .read-more-btn-container a {
+    padding: 0.75rem 0.9375rem;
+  }
+  .showcase-links-container i {
+    font-size: 1.4375rem;
+  }
+}
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 340px) {
+  .showcase .brand-name {
+    font-size: 2.5rem;
+  }
+  .showcase-links-container i {
+    font-size: 1.5625rem;
+  }
+}
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 260px) {
+  .showcase {
+    height: 80vh;
+  }
+  .showcase .brand-name {
+    font-size: 2.1875rem;
+  }
+  .showcase .auto-write-text {
+    font-size: 1rem;
+  }
+}
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 225px) {
+  .showcase .brand-name {
+    font-size: 1.875rem;
+  }
+  .showcase .auto-write-text {
+    margin-left: -0.3125rem;
+    font-size: 0.875rem;
+    margin-bottom: -0.625rem;
+    margin-top: 0.625rem;
+  }
+}

@@ -1,0 +1,189 @@
+:root {
+  --black-color: rgb(34, 33, 33); /* --primary-color */
+  --black-color-light: rgb(34, 30, 30); /* --primary-color-light */
+  --black-color-dark: rgb(10, 4, 4); /* --primary-color-dark */
+  --brand-color-alt: rgb(9, 111, 136); /* --brand-color */
+  --brand-color: rgb(0, 183, 255); /* --brand-color-2 */
+  --background-white: #e3edf7;
+  --menu-z-index: 100;
+  --navbar-z-index: 81;
+  --home-z-index: -10;
+}
+
+/* STAT AND PROGRESS */
+.stat-section {
+  width: 100vw;
+  background: url("../images/general/about-bg.jpg") no-repeat center
+    center/cover;
+
+  border-bottom: 0.1875rem solid var(--brand-color-alt); /* 3px */
+  border-top: 0.1875rem solid var(--brand-color-alt);
+  padding: 2.5rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.stat-section-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.stat-control {
+  margin-right: 2.5rem;
+  margin-bottom: 3.125rem;
+}
+.stat-control-sp {
+  margin-left: 1.875rem;
+}
+
+.stat-service-name {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+
+  margin-top: 3.75rem;
+  opacity: 0.9;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Progress Process */
+.progress {
+  width: 7.5rem;
+  height: 7.5rem;
+  position: relative;
+}
+.progress.progress-with-lg-name {
+  margin-left: 3.125rem;
+}
+
+.progress-outer {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  padding: 1.25rem;
+  box-shadow: 0.375rem 0.375rem 0.625rem -0.0625rem rgba(0, 0, 0, 0.15),
+    -0.375rem -0.375rem 0.625rem -0.0625rem rgba(255, 255, 255, 0.7);
+}
+
+.progress-inner {
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0.25rem 0.25rem 0.375rem -0.0625rem rgba(0, 0, 0, 0.2),
+    inset -0.25rem -0.25rem 0.375rem -0.0625rem rgba(255, 255, 255, 0.7),
+    -0.03125rem -0.03125rem 0rem rgba(255, 255, 255, 0.1),
+    0.03125rem 0.03125rem 0rem rgba(0, 0, 0, 0.15),
+    0rem 0.75rem 0.625rem -0.625rem rgba(0, 0, 0, 0.05);
+}
+
+.progress-number {
+  color: #555;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* --------------------------------------------------------------------------------- */
+
+/* Web Dev Progress Percentage Animation */
+#webDevCircle {
+  fill: none;
+  stroke: url(#webDevGradientColor);
+  stroke-width: 1.25rem;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+#webDevCircle.active {
+  animation: webDevProgressAnim 2s linear forwards;
+}
+@keyframes webDevProgressAnim {
+  100% {
+    stroke-dashoffset: 89.68;
+  }
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Web Design Progress Percentage Animation */
+#webDesignCircle {
+  fill: none;
+  stroke: url(#webDesignGradientColor);
+  stroke-width: 1.25rem;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+#webDesignCircle.active {
+  animation: webDesignProgressAnim 2s linear forwards;
+}
+@keyframes webDesignProgressAnim {
+  100% {
+    stroke-dashoffset: 118;
+  }
+}
+/* --------------------------------------------------------------------------------- */
+/* Seo Progress Percentage Animation */
+#seoCircle {
+  fill: none;
+  stroke: url(#seoGradientColor);
+  stroke-width: 1.25rem;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+}
+#seoCircle.active {
+  animation: seoProgressAnim 2s linear forwards;
+}
+@keyframes seoProgressAnim {
+  100% {
+    stroke-dashoffset: 70.8;
+  }
+}
+
+/* END OF STAT AND PROGRESS */
+
+/* ------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------- */
+/* MOBILE RESPONSIVE */
+
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 740px) {
+  .stat-service-name {
+    font-size: 1.25rem;
+  }
+  .progress.progress-with-lg-name {
+    margin-left: 1.875rem;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .stat-control-sp {
+    margin-left: 0.9375rem;
+  }
+  .stat-service-name {
+    font-size: 1.125rem;
+  }
+  .progress.progress-with-lg-name {
+    margin-left: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .stat-control-sp {
+    margin-left: -0.625rem;
+  }
+  .stat-service-name {
+    font-size: 1.0625rem;
+  }
+  .progress.progress-with-lg-name {
+    margin-left: 0.625rem;
+  }
+}

@@ -1,0 +1,235 @@
+:root {
+  --black-color: rgb(34, 33, 33); /* --primary-color */
+  --black-color-light: rgb(34, 30, 30); /* --primary-color-light */
+  --black-color-dark: rgb(10, 4, 4); /* --primary-color-dark */
+  --brand-color-alt: rgb(9, 111, 136); /* --brand-color */
+  --brand-color: rgb(0, 183, 255); /* --brand-color-2 */
+  --background-white: #e3edf7;
+  --menu-z-index: 100;
+  --navbar-z-index: 81;
+  --home-z-index: -10;
+}
+/* CONTACT ME SECTION */
+.contact-me-section i {
+  color: white;
+}
+.contact-me-section {
+  background-color: var(--background-white);
+  color: black;
+  width: 100vw;
+  padding: 3.125rem 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+.contact-me-container {
+  width: 80%;
+}
+
+.contact-me-section-header {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.8125rem;
+  width: 18.75rem;
+  margin: auto;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  opacity: 0.7;
+}
+.contact-me-info-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ---------------------------------CONTACT FORM----------------------------------------- */
+
+.contact-me-form {
+  background: url("../images/general/about-bg.jpg") no-repeat center
+    center/cover;
+  width: 60%;
+  padding: 2.5rem;
+  border: 0.125rem solid var(--brand-color-alt);
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  margin-right: 3.125rem;
+}
+.contact-me-form .form-control {
+  margin-bottom: 0.625rem;
+  position: relative;
+  z-index: 80;
+}
+
+/* --------------------------------CONTACT INPUT------------------------------------------ */
+
+.form-control .input {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.128rem;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.625rem;
+  margin-top: 0.375rem;
+  border: 0.0625rem solid #555;
+}
+.form-control .input {
+  border-radius: 0.625rem;
+}
+.form-control .input:focus {
+  outline: none;
+
+  border: 0.125rem solid var(--brand-color-alt);
+  box-shadow: none;
+}
+.form-control .contact-message {
+  max-height: 6.25rem;
+  min-height: 6.25rem;
+  max-width: 100%;
+  min-width: 100%;
+  font-size: 1rem;
+  border: 0.0625rem solid gray;
+}
+.form-control .contact-message:focus {
+  border: 0.125rem solid var(--brand-color-alt);
+  outline: none;
+  box-shadow: none;
+}
+
+/* ------------------------------CONTACT BUTTON------------------------------------------ */
+.contact-me-button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.128rem;
+  letter-spacing: 0.3125rem;
+  background-color: var(--brand-color-alt);
+  color: white;
+  width: 100%;
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.625rem;
+
+  cursor: pointer;
+  transition: all 0.1s ease-in;
+}
+
+.contact-me-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* -----------------------------CONTACT INFO-------------------------------------------- */
+
+.contact-me-info {
+  height: 18.75rem;
+  width: 18.75rem;
+  background-color: var(--brand-color-alt);
+  border-radius: 0.625rem;
+  color: white;
+  padding: 1.25rem;
+
+  box-shadow: 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-me-info .brand-name {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.9375rem;
+}
+.contact-me-info .container {
+  width: 100%;
+}
+.contact-me-info .info-control {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-bottom: 1.25rem;
+}
+
+.contact-me-info .contact-info-link {
+  margin-right: 1.25rem;
+}
+.contact-me-info .info-header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 0.0625rem dotted #f3f3f3;
+}
+
+/* ------------------------------ICONS---------------------------------------------- */
+
+.contact-me-section .contact-me-info .icons-container {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.contact-me-section .contact-me-info .icons-container .link {
+  margin-right: 0.625rem;
+}
+.contact-me-section .contact-me-info i:hover {
+  color: var(--brand-color);
+}
+.contact-me-section .brand-unique {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+/* END OF CONTACT ME SECTION */
+
+/* ------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------- */
+/* MOBILE RESPONSIVE */
+
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 1095px) {
+  .contact-me-info {
+    margin-top: 2.5rem;
+  }
+  .contact-me-form {
+    margin: auto;
+  }
+}
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 1095px) {
+  .contact-me-info {
+    margin-top: 2.5rem;
+  }
+  .contact-me-form {
+    margin: auto;
+  }
+}
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 1005px) {
+  .contact-me-info {
+    margin-right: 3.125rem;
+  }
+}
+
+/* ------------------________________---------------------*/
+@media only screen and (max-width: 820px) {
+  .contact-me-form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .contact-me-container {
+    width: 90%;
+  }
+  .contact-me-info {
+    margin-right: 0rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact-me-form {
+    width: 98%;
+  }
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 390px) {
+  .contact-me-section-header {
+    font-size: 2.1875rem;
+  }
+}
+/* End Mobile Responsive */

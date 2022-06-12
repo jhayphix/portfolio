@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio websites. Web Development. JhayPhix Portfolio."
+    />
+    <title>Port-fix JhayPhix - Personal Portfolio</title>
+    <link rel="stylesheet" href="font-6/css/all.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="stylesheet" href="styles/showcase.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/stat.css" />
+    <link rel="stylesheet" href="styles/contact-me.css" />
+  </head>
+  <body>
+    <!-- Header Navigation Bar -->
+    <header class="header">
+      <div class="header-fixed">
+        <div class="header-brand-container">
+          <h2 class="header-brand">
+            <span class="brand-highlight">Jhay</span>Ph<span
+              class="brand-highlight"
+              ><i class="fa fa-wrench brand-wrench"></i></span
+            >x
+          </h2>
+        </div>
+      </div>
+
+      <!-- NavBar Menu -->
+      <div class="navbar-menu" id="navbar-menu">
+        <div class="navbar-menu-line"></div>
+        <div class="navbar-menu-line"></div>
+        <div class="navbar-menu-line"></div>
+      </div>
+
+      <!-- NavBar Portrait -->
+      <div class="navbar-portrait-container">
+        <div class="navbar-portrait-wrapper">
+          <img
+            src="images/about/portrait.jpg"
+            alt="About"
+            class="navbar-portrait-img"
+          />
+        </div>
+      </div>
+
+      <!-- NavBar -->
+      <nav class="navbar">
+        <ul class="navbar-items-container">
+          <!-- Navbar Brand -->
+          <li class="navbar-brand">
+            <a href="#">
+              <span class="brand-highlight">Jhay</span>Ph<span
+                class="brand-highlight"
+                ><i class="fa fa-wrench brand-wrench"></i></span
+              >x
+            </a>
+          </li>
+          <!-- NavLinks -->
+          <li class="navbar-item">
+            <a href="#home">HOME</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about-section">ABOUT</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#rcp-wrapper">CHOICE PICKER</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#services-section">SERVICES</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#services-section">MY PORTFOLIO</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#contact-me-section">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End of Header Navigation Bar -->
+
+    <!-- ShowCase -->
+    <section class="showcase" id="home">
+      <div class="brand">
+        <h2 class="brand-name">
+          <span class="brand-highlight">Jhay</span>Ph<span
+            class="brand-highlight"
+            ><i class="fa fa-wrench brand-wrench"></i></span
+          >x
+        </h2>
+        <h3 class="auto-write-text">A Front-End Developer</h3>
+
+        <div class="showcase-links-container">
+          <a href="">
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+
+        <div class="read-more-btn-container">
+          <a href="#about-section">
+            <button class="read-more-btn">SEE MORE</button>
+          </a>
+        </div>
+      </div>
+      <!-- <p class="background-image-loading">Background Image loading...</p> -->
+    </section>
+    <!-- End of Showcase -->
+
+    <!-- About Section -->
+    <section id="about-section" class="about-section">
+      <div class="about-section-container">
+        <!-- About me -->
+        <h2 class="about-section-header">
+          About <span class="text-highlight">Me</span>
+        </h2>
+
+        <p class="about-section-intro">Let me tell you a few things...</p>
+        <div class="about-me-wrapper">
+          <div class="about-me-portrait-container">
+            <img
+              src="images/about/portrait.jpg"
+              alt="my-image"
+              class="about-me-portrait"
+            />
+          </div>
+
+          <div class="about-me-text-container">
+            <h3 class="text-highlight about-me-header">BIO - JhayPhix</h3>
+            <div class="about-me-text">
+              <p>
+                I am a Statistics student and i love to code. I build new
+                projects to tickle my brain and love to teach others how i made
+                them. When am not coding, i enjoy watching movies. I believe in
+                having a good time as well as doing what i love
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Random Choice Picker -->
+        <div class="rcp-wrapper" id="rcp-wrapper">
+          <div class="rcp-header-container">
+            <h3 class="rcp-header" id="rcp-header">A Front-End Developer...</h3>
+          </div>
+
+          <p class="rcp-des">
+            Type In Your Choices Separated By A Comma <b>" , "</b> . Press Enter
+            When You Are Done
+          </p>
+
+          <textarea
+            class="rcp-textarea"
+            id="rcp-textarea"
+            placeholder="Type Choices Here..."
+          ></textarea>
+          <div class="tags-container active" id="tags-container"></div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Services Section -->
+    <section class="services-section" id="services-section">
+      <div class="services-section-container">
+        <h2 class="services-section-header">SERVICES</h2>
+
+        <div class="services-wrapper">
+          <div class="service-control">
+            <div class="service-control-img-container">
+              <img
+                src="images/services/web-dev.jpg"
+                alt="service"
+                class="service-img"
+              />
+            </div>
+            <div class="service-text-content">
+              <h3 class="service-header">WEB DEVELOPMENT</h3>
+              <p class="service-text text-sp">General Purpose</p>
+              <p class="service-text text-sp">Landing Page</p>
+              <p class="service-text text-sp">Business Websites</p>
+            </div>
+          </div>
+
+          <div class="service-control">
+            <div class="service-control-img-container">
+              <img
+                src="images/services/web-design.jpg"
+                class="service-img"
+                alt="service"
+              />
+            </div>
+            <div class="service-text-content">
+              <h3 class="service-header">UI/UX DESIGN</h3>
+              <p class="service-text">
+                Create amazing and lovely designs for your brands businesses &
+                websites
+              </p>
+              <!-- <p class="service-text">Landing Page</p>
+                      <p class="service-text">Business Websites</p> -->
+            </div>
+          </div>
+
+          <div class="service-control">
+            <div class="service-control-img-container">
+              <img
+                src="images/services/seo.jpg"
+                class="service-img effect"
+                alt="Service"
+              />
+            </div>
+            <div class="service-text-content">
+              <h3 class="service-header">SEO OPTIMIZATION</h3>
+              <p class="service-text">
+                Do you want to be noticed and also appear in search engines ?
+              </p>
+              <p class="service-text">I am at your service</p>
+              <!-- <p class="service-text">Business Websites</p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Services Section-->
+
+    <!-- Stat Section -->
+    <section class="stat-section">
+      <div class="stat-section-container">
+        <!-- Web Development -->
+        <div class="stat-control">
+          <div class="progress progress-with-lg-name">
+            <div class="progress-outer">
+              <div class="progress-inner">
+                <h2 class="progress-number" id="web-dev-percentage">81%</h2>
+              </div>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="10rem"
+              height="10rem"
+            >
+              <defs>
+                <linearGradient id="webDevGradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                id="webDevCircle"
+              />
+            </svg>
+          </div>
+          <h2 class="stat-service-name stat-service-lg-name">
+            WEB DEVELOPMENT
+          </h2>
+        </div>
+
+        <!-- Web Design -->
+        <div class="stat-control stat-control-sp">
+          <div class="progress">
+            <div class="progress-outer">
+              <div class="progress-inner">
+                <h2 class="progress-number" id="wed-design-percentage">75%</h2>
+              </div>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="10rem"
+              height="10rem"
+            >
+              <defs>
+                <linearGradient id="webDesignGradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                id="webDesignCircle"
+              />
+            </svg>
+          </div>
+          <h2 class="stat-service-name">UI/ UX Design</h2>
+        </div>
+
+        <!-- Seo Optimization -->
+        <div class="stat-control">
+          <div class="progress progress-with-lg-name">
+            <div class="progress-outer">
+              <div class="progress-inner">
+                <h2 class="progress-number" id="seo-percentage">85%</h2>
+              </div>
+            </div>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              width="10rem"
+              height="10rem"
+            >
+              <defs>
+                <linearGradient id="seoGradientColor">
+                  <stop offset="0%" stop-color="#e91e63" />
+                  <stop offset="100%" stop-color="#673ab7" />
+                </linearGradient>
+              </defs>
+              <circle
+                cx="80"
+                cy="80"
+                r="70"
+                stroke-linecap="round"
+                id="seoCircle"
+              />
+            </svg>
+          </div>
+          <h2 class="stat-service-name stat-service-lg-name">
+            SEO OPTIMIZATION
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- Stat of End Section-->
+
+    <!-- Contact-Me Section -->
+    <section class="contact-me-section" id="contact-me-section">
+      <div class="contact-me-container">
+        <h2 class="contact-me-section-header">Get In Touch</h2>
+
+        <div class="contact-me-info-container">
+          <!-- Contact me form -->
+          <form class="contact-me-form" id="contact-me-form">
+            <div class="form-control">
+              <textarea
+                id="contact-me-msg"
+                class="contact-message input"
+                placeholder="Type your message here..."
+              ></textarea>
+            </div>
+            <div class="form-control">
+              <input
+                id="contact-me-email"
+                type="email"
+                class="contact-email input"
+                placeholder="Email : "
+                required
+              />
+            </div>
+            <div class="form-control">
+              <input
+                id="contact-me-name"
+                type="text"
+                class="contact-name input"
+                placeholder="Name : "
+                required
+              />
+            </div>
+            <div class="form-control">
+              <input
+                id="contact-me-number"
+                type="text"
+                class="contact-phone input"
+                placeholder="Phone :"
+              />
+            </div>
+            <div class="form-control button-form-control">
+              <input
+                type="submit"
+                value="MESSAGE ME"
+                class="contact-me-button"
+              />
+            </div>
+          </form>
+
+          <!-- My Info -->
+          <div class="contact-me-info">
+            <div class="container">
+              <h2 class="brand-name">
+                <span class="jhay-highlight brand-highlight">Jhay</span>Fh<span
+                  class="brand-highlight"
+                  ><i class="fa fa-wrench brand-wrench"></i></span
+                >x
+              </h2>
+
+              <div class="info-control">
+                <i class="fas fa-map-marker-alt fa-2x contact-info-link"></i>
+                <h3 class="info-header">Kumasi - Ghana</h3>
+              </div>
+              <div class="info-control">
+                <i class="fas fa-phone fa-2x contact-info-link"></i>
+                <h3 class="info-header">+233 248 359 918</h3>
+              </div>
+              <div class="info-control">
+                <i class="fas fa-envelope fa-2x contact-info-link"></i>
+                <h3 class="info-header">jhayfhix05@gmail.com</h3>
+              </div>
+
+              <div class="icons-container">
+                <a href="https://chatwith.io/s/jhayfhix" target="blank">
+                  <i class="fab fa-whatsapp fa-2x link"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-facebook fa-2x link"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-github fa-2x link"></i>
+                </a>
+                <a href="">
+                  <i class="fab fa-twitter fa-2x link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact Me Section -->
+
+    <!-- Jump to Top -->
+    <a href="#" class="jump-to-top">
+      <i class="fas fa-angle-up fa-2x jump-to-top-icon"></i>
+    </a>
+    <!-- End of Jump To Top -->
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="footer-container">
+        <!-- Footer Navigation-->
+
+        <div class="footer-nav">
+          <ul class="footer-nav-container">
+            <li class="footer-nav-item">
+              <a href="#home">HOME</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#about-section">ABOUT</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#rcp-wrapper">CHOICE PICKER</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#services-section">SERVICES</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="#contact-me-section">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Social Links -->
+        <div class="footer-social-links">
+          <a href="">
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+        </div>
+        <div class="copyright-container">
+          <p class="copyright-text">
+            Copyright &copy; 2022 JhayPhix All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
